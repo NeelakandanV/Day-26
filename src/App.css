@@ -1,38 +1,120 @@
-.App {
+.MainParent{
+  display: relative;
+  margin: 1px;
+  padding: 2px;
+  background: radial-gradient(rgb(238, 240, 235),rgb(162, 162, 223),rgb(151, 234, 151));
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+.InfoZone{
+  display: absolute;
+  margin: 2px;
+  border-bottom: 3px solid beige;
+  padding: 3px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navigate{
+  margin: 2px;
+  border-bottom: 3px solid beige;
+  padding: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Title{
+  display: absolute;
+  margin: 2px;
+  padding: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Content{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  margin: 10px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.Footer{
+  font-size: larger;
+  font-weight: bolder;
+  width : 100%;
+  border-top: 2px solid wheat;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.User-Cont{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 2px;
+  justify-content: space-around;
+}
+
+.userCard{
+  margin: 5px;
+  border: 2px solid beige;
+  background-color: rgb(187, 185, 187);
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+  width: 350px;
+}
+
+.view-btn{
+  margin: 10px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.view-btn:hover{
+  background-color: darkolivegreen;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.edit-btn{
+  margin: 10px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.edit-btn:hover{
+  background-color: dodgerblue;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.del-btn{
+  margin: 10px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.del-btn:hover{
+  background-color: crimson;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.User-Profile{
+  margin: 5px;
+  border: 2px solid beige;
+  background-color: rgb(187, 185, 187);
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+  width: 350px;
+}
+
+.NoPage{
+  text-align: center;
+}
+
+.NoPage Button{
+  font-size: xx-large;
+}
+
+.Text{
+  text-align: center;
 }
