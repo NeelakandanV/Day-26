@@ -1,23 +1,17 @@
-import { Nav } from "react-bootstrap";
+import { Button, Nav } from "react-bootstrap";
+import { useHistory } from "react-router-dom/cjs/react-router-dom";
 
 export default function BaseApp({title,children,InfoText}){
+    const history=useHistory()
     return(
         <div className="MainParent">
             <div className="InfoZone">
                 <h2>User Management System</h2>
             </div>
             <div className="Navigate">
-                <Nav className="justify-content-center" activeKey="/home">
-                  <Nav.Item>
-                    <Nav.Link href="/">Dashboard</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link href="/users">User-Details</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link href="/create-user">Create User</Nav.Link>
-                  </Nav.Item>
-                </Nav>
+                    <Button onClick={()=>history.push('/')}>Dashboard</Button>
+                    <Button onClick={()=>history.push("/users")}>User-Details</Button>
+                    <Button onClick={()=>history.push("/create-user")}>Create User</Button>
             </div>
             <div className="Title">
                 <h3>{title}</h3>
